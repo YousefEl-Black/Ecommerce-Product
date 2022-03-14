@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imgs/logo.svg">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.rules.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <!-- Start Header -->
+
+    <header>
+      <div class="container">
+
+        <div class="right-header">
+          <div class="icon-menu">
+            <img src="imgs/icon-menu.svg" alt="">
+          </div>
+
+          <div class="logo">
+            <img src="imgs/logo.svg" alt="">
+          </div>
+          <ul>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="left-header">
+          <div class="cart">
+            <div class="image">
+              <div class="num-of-orders"></div>
+              <img src="imgs/icon-cart.svg" alt="">
+            </div>
+            <div class="checkout">
+              <h2>Cart</h2>
+              <div class="cart-orders">
+                <div class="empty">Your cart is empty.</div>
+                <div class="not-empty">
+                  <div class="orders">
+                    <!-- <div>
+                      <img src="imgs/image-product-1-thumbnail.jpg" alt="">
+                      <div class="text">
+                        <div class="title">Fall Limited Edition Sneakers</div>
+                        <div class="price">$125.00 x 3 <span>$375.00</span></div>
+                      </div>
+                      <img src="imgs/icon-delete.svg" alt="">
+                    </div> -->
+                  </div>
+                  <div class="btn"><a href="#">Checkout</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="imgs/image-avatar.png" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu">
+        <div class="close">
+          <img src="imgs/icon-close.svg" alt="Close">
+        </div>
+        <ul>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="black"></div>
+
+    </header>
+
+
+    <!-- End Header -->
+
+    <!-- Start Landing -->
+
+    <div class="landing">
+      <div class="container">
+
+        <!-- Start Photos Slider -->
+
+        <div class="slider">
+          <div class="current-img">
+            <img class="active-img" src="imgs/image-product-1.jpg" alt="" data-index="0" onclick="openImg(0)">
+            <img src="imgs/image-product-2.jpg" alt="" data-index="1" onclick="openImg(1)">
+            <img src="imgs/image-product-3.jpg" alt="" data-index="2" onclick="openImg(2)">
+            <img src="imgs/image-product-4.jpg" alt="" data-index="3" onclick="openImg(3)">
+          </div>
+          <div class="imgs">
+            <img class="active-thumbnail" src="imgs/image-product-1-thumbnail.jpg" alt="" data-index="0" onclick="chooseImg(0)">
+            <img src="imgs/image-product-2-thumbnail.jpg" alt="" data-index="1" onclick="chooseImg(1)">
+            <img src="imgs/image-product-3-thumbnail.jpg" alt="" data-index="2" onclick="chooseImg(2)">
+            <img src="imgs/image-product-4-thumbnail.jpg" alt="" data-index="3" onclick="chooseImg(3)">
+          </div>
+          <div class="on-the-fly">  
+            <img class="opacity-img" src="imgs/image-product-1.jpg" alt="" data-index="0">
+            <img src="imgs/image-product-2.jpg" alt="" data-index="1">
+            <img src="imgs/image-product-3.jpg" alt="" data-index="2">
+            <img src="imgs/image-product-4.jpg" alt="" data-index="3">
+            <div class="controls">
+              <img src="imgs/icon-close.svg" alt="">
+              <div class="next" onclick="changeImg(1)"><img src="imgs/icon-next.svg" alt=""></div>
+              <div class="prev" onclick="changeImg(-1)"><img src="imgs/icon-previous.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="black"></div>
+
+        <!-- End Photos Slider -->
+
+        <!-- Start Text Section-->
+
+        <div class="information">
+          <div class="title">
+            <p>Sneaker Company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+          </div>
+          <div class="text">
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          </div>
+          <div class="price">
+
+            <div class="offer">
+              <p class="after-discount">$<span>125.00</span></p>
+              <p class="discount">50%</p>
+            </div>
+
+            <p class="before-discount">$<span>250.00</span></p>
+
+          </div>
+
+
+          <div class="add-cart">
+            <div class="number">
+              <img src="imgs/icon-minus.svg" alt="">
+              <p>0</p>
+              <img src="imgs/icon-plus.svg" alt="">
+            </div>
+
+            <div class="add">
+              <img src="imgs/icon-cart.svg" alt="">
+              <p>Add to cart</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- End Text Section-->
+
+      </div>
+    </div>
+
+    <!-- End Landing -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
